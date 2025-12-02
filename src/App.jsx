@@ -167,7 +167,7 @@ const App = () => {
             throw new Error("API key is missing. Please enter your Gemini API key.");
         }
 
-        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${apiKey}`;
 
         const body = {
             contents: [{ role: "user", parts: [{ text: prompt }] }],
